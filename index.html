@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jyothi Pavan Kutala | Data Science Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family: "Poppins", Arial, sans-serif; }
+        body { background:#0b0b10; color:#ffffff; }
+        a { color:#00eaff; text-decoration:none; }
+        a:hover { text-decoration:underline; }
+
+        header { padding:20px 10%; background:#0f0f16; position:sticky; top:0; z-index:10; }
+        nav { display:flex; justify-content:space-between; align-items:center; }
+        .logo { font-size:24px; font-weight:600; }
+        .logo span { color:#00eaff; }
+        .nav-links { list-style:none; display:flex; gap:20px; }
+        .nav-links a { font-size:14px; }
+
+        section { padding:60px 10%; max-width:1200px; margin:auto; }
+        .hero { display:flex; flex-direction:column; gap:15px; padding-top:40px; }
+        .hero h1 { font-size:32px; }
+        .hero h1 span { color:#00eaff; }
+        .hero h2 { font-size:18px; opacity:0.8; }
+        .hero p { max-width:600px; line-height:1.6; opacity:0.9; }
+        .btn { display:inline-block; margin-top:20px; padding:10px 20px; background:#00eaff; color:#000; border-radius:4px; font-weight:600; text-decoration:none; }
+        .btn:hover { background:#0099aa; }
+
+        h2.section-title { font-size:24px; margin-bottom:20px; border-left:4px solid #00eaff; padding-left:10px; }
+
+        .two-col { display:grid; grid-template-columns:1.3fr 1fr; gap:40px; }
+        .card { background:#15151f; padding:18px; border-radius:8px; border:1px solid #202033; margin-bottom:18px; }
+        .card h3 { margin-bottom:8px; font-size:18px; }
+        .card ul { padding-left:18px; margin-top:6px; }
+        .chip-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+        .chip { padding:6px 10px; border-radius:999px; background:#1f1f2b; font-size:12px; border:1px solid #26263a; }
+
+        .projects-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:18px; }
+        .project-card { background:#15151f; padding:16px; border-radius:8px; border:1px solid #25253a; display:flex; flex-direction:column; gap:8px; }
+        .project-card h3 { font-size:17px; }
+        .project-tag-row { display:flex; flex-wrap:wrap; gap:6px; margin-top:4px; }
+        .project-tag { font-size:11px; padding:4px 8px; border-radius:999px; background:#202030; }
+        .small { font-size:13px; opacity:0.9; }
+
+        footer { text-align:center; padding:20px 10%; border-top:1px solid #191926; font-size:13px; margin-top:40px; }
+
+        @media(max-width:768px){
+            .two-col { grid-template-columns:1fr; }
+            header { padding:15px 6%; }
+            section { padding:50px 6%; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Pavan<span>DS</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="top">
+    <h1>Hi, I'm <span>Jyothi Pavan Kutala</span></h1>
+    <h2>MS Data Science @ University of Massachusetts Dartmouth</h2>
+    <p>
+        I am a data science graduate student with hands-on experience in
+        machine learning, AI-driven cybersecurity, data visualization dashboards,
+        and high-performance computing projects. I enjoy building end-to-end
+        solutions: from data preprocessing to web deployment.
+    </p>
+    <a class="btn" href="#projects">View My Projects</a>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="two-col">
+        <div>
+            <div class="card">
+                <h3>Background</h3>
+                <p class="small">
+                    I am pursuing my Master of Science in Data Science (expected graduation: Dec 2025).
+                    My interests include AI for cybersecurity, web-based ML dashboards,
+                    and data visualization for real-world decision making.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Certifications</h3>
+                <ul class="small">
+                    <li>IBM Data Analytics Essentials – IBMDA-2022</li>
+                    <li>Google Analytics Individual Qualification – 2022</li>
+                    <li>Intel Software Training – 2021</li>
+                    <li>AWS Academy Cloud Foundations – In Progress</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <h3>Quick Info</h3>
+                <ul class="small">
+                    <li><b>Degree:</b> MS in Data Science</li>
+                    <li><b>Location:</b> Massachusetts, USA</li>
+                    <li><b>Focus Areas:</b> Machine Learning, AI Security, Data Visualization</li>
+                    <li><b>Tools:</b> VS Code, Jupyter, Git, Anaconda, PyCharm</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="two-col">
+        <div>
+            <div class="card">
+                <h3>Programming & ML</h3>
+                <div class="chip-row">
+                    <span class="chip">Python</span>
+                    <span class="chip">Java</span>
+                    <span class="chip">C</span>
+                    <span class="chip">Pandas</span>
+                    <span class="chip">NumPy</span>
+                    <span class="chip">Scikit-learn</span>
+                    <span class="chip">TensorFlow</span>
+                    <span class="chip">Keras</span>
+                    <span class="chip">Statistical Testing</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Data & Visualization</h3>
+                <div class="chip-row">
+                    <span class="chip">SQL</span>
+                    <span class="chip">MySQL</span>
+                    <span class="chip">PostgreSQL</span>
+                    <span class="chip">MongoDB</span>
+                    <span class="chip">Tableau</span>
+                    <span class="chip">Matplotlib</span>
+                    <span class="chip">Seaborn</span>
+                    <span class="chip">D3.js</span>
+                    <span class="chip">Chart.js</span>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="card">
+                <h3>Cloud, Big Data & HPC</h3>
+                <div class="chip-row">
+                    <span class="chip">Hadoop</span>
+                    <span class="chip">Spark</span>
+                    <span class="chip">AWS</span>
+                    <span class="chip">Azure</span>
+                    <span class="chip">Parallel Computing</span>
+                    <span class="chip">Performance Analysis</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Tools</h3>
+                <div class="chip-row">
+                    <span class="chip">Excel</span>
+                    <span class="chip">Git</span>
+                    <span class="chip">Jupyter Notebook</span>
+                    <span class="chip">VS Code</span>
+                    <span class="chip">PyCharm</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <h3>AI-Driven Intrusion Detection System</h3>
+            <p class="small">
+                Built an intrusion detection system using the CICIDS2017 dataset with models like
+                Random Forest, SVM, and XGBoost. Implemented data preprocessing, feature selection,
+                model training, and a Flask API with web dashboard for visualizing network traffic and attacks.
+            </p>
+            <div class="project-tag-row">
+                <span class="project-tag">Cybersecurity</span>
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Flask</span>
+                <span class="project-tag">ML</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Smart Housing Price Prediction Dashboard</h3>
+            <p class="small">
+                End-to-end web app that predicts housing prices using regression models.
+                Includes visualizations like histograms, scatter plots, and price vs. features analysis
+                served through a Flask backend and a modern frontend dashboard.
+            </p>
+            <div class="project-tag-row">
+                <span class="project-tag">Regression</span>
+                <span class="project-tag">Flask</span>
+                <span class="project-tag">Chart.js</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Facial Emotion Recognition (LDA + SVM)</h3>
+            <p class="small">
+                Trained a model to recognize 8 emotions (anger, contempt, disgust, fear, happiness,
+                sadness, surprise, neutral) using LDA for dimensionality reduction and SVM for classification.
+                Dataset from Kaggle, with preprocessing and performance evaluation.
+            </p>
+            <div class="project-tag-row">
+                <span class="project-tag">Computer Vision</span>
+                <span class="project-tag">Python</span>
+                <span class="project-tag">SVM</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Climate–Economy Data Visualization Dashboard</h3>
+            <p class="small">
+                Dashboard exploring relationships between CO₂ emissions, temperature changes,
+                and economic indicators over time. Implemented interactive charts using D3.js / Chart.js
+                with a Flask backend serving processed data.
+            </p>
+            <div class="project-tag-row">
+                <span class="project-tag">D3.js</span>
+                <span class="project-tag">Flask</span>
+                <span class="project-tag">Data Viz</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Parallel Image Processing (HPC)</h3>
+            <p class="small">
+                Applied convolution filters and edge detection to images using parallel processing.
+                Compared serial vs. parallel runtime and analyzed speedup and efficiency across platforms.
+            </p>
+            <div class="project-tag-row">
+                <span class="project-tag">HPC</span>
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Performance</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Stock Market Analysis & Clustering</h3>
+            <p class="small">
+                Performed exploratory data analysis and clustering on stock market data
+                using K-Means and hierarchical clustering. Visualized clusters and relationships
+                between returns and volatility using R.
+            </p>
+            <div class="project-tag-row">
+                <span class="project-tag">R</span>
+                <span class="project-tag">Clustering</span>
+                <span class="project-tag">EDA</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="card">
+        <p class="small">
+            I am open to internships, research assistant roles, and data/AI-related opportunities.
+        </p>
+        <br>
+        <p class="small"><b>Email:</b> <a href="mailto:jyothipavan1229@gmail.com">jyothipavan1229@gmail.com</a></p>
+        <p class="small"><b>GitHub:</b> <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">github.com/YOUR_GITHUB_USERNAME</a></p>
+        <p class="small"><b>LinkedIn:</b> <a href="https://linkedin.com/in/YOUR_LINKEDIN_ID" target="_blank">linkedin.com/in/YOUR_LINKEDIN_ID</a></p>
+    </div>
+</section>
+
+<footer>
+    © 2025 Jyothi Pavan Kutala · Data Science & AI Portfolio
+</footer>
+
+</body>
+</html>
